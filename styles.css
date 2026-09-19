@@ -733,3 +733,62 @@ footer {
     transform: none;
   }
 }
+
+/* =========================================================
+   CONSULTATION CONTACT BUTTONS
+   ========================================================= */
+
+.consultation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.consultation-actions .button {
+  min-width: 225px;
+  margin-top: 0;
+}
+
+.button-contact {
+  color: var(--white);
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.button-contact:hover {
+  color: var(--ink);
+  background: var(--white);
+  border-color: var(--white);
+}
+
+.consultation-actions + small {
+  display: block;
+  margin-top: 1.25rem;
+  color: rgba(255, 255, 255, 0.48);
+  line-height: 1.7;
+}
+
+/* Mobile layout */
+
+@media (max-width: 650px) {
+  .consultation-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .consultation-actions .button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .consultation-actions + small {
+    max-width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
