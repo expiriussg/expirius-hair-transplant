@@ -792,3 +792,38 @@ footer {
     margin-left: auto;
   }
 }
+
+.button-arrow {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.65rem;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.button:hover .button-arrow {
+  transform: translate(3px, 3px);
+}
+
+@media (max-width: 768px) {
+  .button-arrow {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
